@@ -9,3 +9,7 @@ class test(unittest.TestCase):
     def test_nonPal(self):
         result = palindrome.pal('teacher')
         self.assertEqual(result, "Not Palindrome")
+
+    def test_invalidInput(self):
+        result = palindrome.pal(5)
+        self.assertEqual(result, "Invalid Input")
